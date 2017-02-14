@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Our Class</title>
+</head>
+<body>
+	<h1>Our Class</h1>
+	<table>
+	<tr>
+		<th>First</th>
+		<th>Last</th>
+	</tr>
+	<% @users.each do |user| %>
+		<tr>
+			<td><%= user.fname %></td>
+			<td><%= user.lname %></td>
+		</tr>
+	<% end %>
+	</table>
+</body>
+</html>
