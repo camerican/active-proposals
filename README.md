@@ -50,4 +50,38 @@ rake db:create_migration NAME=create_proposals_table
 ```
 
 
+# User Logins
+
+We'll need a form with a username and password to check.  We'll set up a POST route to recieve this data, which will come through the params hash.
+
+```html
+<form method="POST" action="/login">
+	<fieldset>
+		<legend>Login</legend>
+		<label for="user">User</label>
+		<input name="user" /><br />
+		<label for="pass">Pass</label>
+		<input type="password" name="password" /><br />
+		<input type="submit" value="Login" />
+	</fieldset>
+</form>
+```
+
+We can receive the above data at `post '/login'`.
+
+```
+post '/login' do
+  puts "My login data: " + params.inspect
+  params.inspect
+end
+```
+
+## Database Setup 
+
+To set-up your database and get the seeds inserted, we can run the following commands.
+
+```
+rake db:migrate
+rake db:seed
+```
 
