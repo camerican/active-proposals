@@ -17,10 +17,9 @@ User.create fname: 'Angie', lname: 'Hill'
 User.create fname: 'Mauricio', lname: 'Garcia'
 ## Create Proposals
 Proposal.create name: 'Class Nickname', creator_id: 1, status: 'Open', deadline: Date.parse("February 24, 2017")
-
-
-
-
+Proposal.create name: 'Lasagna', creator_id: 4, status: 'Delicious', deadline: nil
+Proposal.create name: 'Float Kings', creator_id: 6, status: 'Ambiguous', deadline: nil
+Proposal.create name: 'Macchiato Time', creator_id: 4, status: 'Open', deadline: Date.parse("February 24, 2017")
 
 
 
