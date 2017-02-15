@@ -21,19 +21,21 @@ ActiveRecord::Schema.define(version: 20170214212749) do
     t.string   "name"
     t.integer  "creator_id"
     t.string   "status"
-    t.datetime "deadline",   default: '2017-02-14 22:13:29'
+    t.datetime "deadline",   default: '2017-02-15 15:59:05'
   end
 
   create_table "user_votes", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "proposal_id"
     t.integer  "option_id"
-    t.datetime "created_at",  default: '2017-02-14 22:14:01'
+    t.datetime "created_at",  default: '2017-02-15 15:59:05'
   end
 
   create_table "users", force: :cascade do |t|
     t.string "fname"
     t.string "lname"
+    t.string "username"
+    t.string "password"
   end
 
 end

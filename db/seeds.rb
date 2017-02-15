@@ -1,6 +1,6 @@
 require 'date'
 ## Create Users
-User.create fname: 'Cam', lname: 'Crews'
+User.create fname: 'Cam', lname: 'Crews', username: "camerican", password: "FluffyBunny"
 User.create fname: 'Ber', lname: 'Cohen'
 User.create fname: 'James', lname: 'Sullivan'
 User.create fname: 'Alfe', lname: 'Corona'
